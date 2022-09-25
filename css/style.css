@@ -337,11 +337,24 @@ select:focus {
 html {
   scroll-behavior: smooth;
   cursor: default;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 body {
   background-color: #1d1d1d;
   margin: auto;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
 }
 
 #nav-custom-styling {
@@ -353,7 +366,7 @@ body {
 }
 
 .nav-custom-styling {
-  background-color: rgba(255, 255, 255, 0.04) !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .sticky-top {
@@ -367,7 +380,7 @@ body {
 }
 
 .header-div {
-  margin: 180px 20px 0 40px;
+  padding: 180px 20px 0 40px;
 }
 
 .main-header {
@@ -387,10 +400,12 @@ body {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.3s ease-in-out;
+  width: fit-content;
 }
 
 .main-header span:hover,
-.header-title:hover {
+.header-title:hover,
+.header-nav a:hover {
   color: #0ABAB5;
 }
 
@@ -400,9 +415,26 @@ body {
   margin-right: 15px;
 }
 
-.page {
-  width: 100vw;
-  height: 100vw;
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: rgba(255, 255, 255, 0.2);
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  transition: stroke 0.3s ease-in-out, stroke-width 1.5s ease-in-out;
+}
+
+.arrows:hover > path {
+  stroke: #0ABAB5;
+  stroke-width: 3px;
 }
 
 .skills-section {
@@ -530,6 +562,32 @@ body {
     opacity: 1;
   }
 }
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.arrows path.a1 {
+  animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+}
+
 @media (min-width: 768px) {
   .project-container {
     flex-direction: row;
@@ -541,7 +599,7 @@ body {
     font-size: 2.5rem;
   }
   .header-div {
-    margin: 250px 20px 0 40px;
+    padding: 250px 20px 0 40px;
   }
 }
 

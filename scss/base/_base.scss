@@ -6,11 +6,24 @@
 html {
     scroll-behavior: smooth;
     cursor: default;
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
 }
 
 body {
     background-color: #1d1d1d;
     margin: auto;
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
 }
 
 // ======================================
@@ -26,7 +39,7 @@ body {
 }
 
 .nav-custom-styling {
-    background-color: $text-color-grey-header !important;
+    background-color: $text-color-grey !important;
 }
 
 .sticky-top {
@@ -44,7 +57,7 @@ body {
 }
 
 .header-div {
-    margin: 180px 20px 0 40px;
+    padding: 180px 20px 0 40px;
 }
 
 
@@ -66,11 +79,13 @@ body {
     font-weight: bold;
     color: $text-color-grey;
     transition: color .3s ease-in-out;
+    width: fit-content;
 }
 
 .main-header span:hover,
-.header-title:hover {
-    color: #0ABAB5;
+.header-title:hover,
+.header-nav a:hover {
+    color: $color-hover;
 }
 
 .header-nav a{
@@ -79,10 +94,31 @@ body {
     margin-right: 15px;
 }
 
-.page {
-    width: 100vw;
-    height: 100vw;
+// Scroll arrow
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
 }
+
+.arrows path {
+    stroke: $text-color-grey-transparent;
+    fill: transparent;
+    stroke-width: 2px;	
+    animation: arrow 2s infinite;
+    transition: stroke .3s ease-in-out, stroke-width 1.5s ease-in-out;
+}
+
+.arrows:hover > path {
+    stroke: $color-hover;
+    stroke-width: 3px;	
+}
+
+
 
 // ======================================
 //  Skills section
