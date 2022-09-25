@@ -1,4 +1,21 @@
 
+
+@media (min-width: 550px){
+
+    .line-break-mob {
+        display: none;
+   }
+
+    .main-header span{
+        font-size: 2.2rem;
+    }
+    .skills-header .letter,
+    .project-header .letter {
+        font-size: 5rem;
+}
+    
+}
+
 @media (min-width: 768px){
 
     
@@ -14,8 +31,13 @@
     }
 
     .header-div {
-        padding: 250px 20px 0 40px;
+        padding-top: 200px;
     }
+
+    .skills-header .letter,
+    .project-header .letter {
+        font-size: 7rem;
+}
 
 }
 

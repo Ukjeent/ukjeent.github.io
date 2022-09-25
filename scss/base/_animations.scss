@@ -20,6 +20,38 @@
         opacity: 0;
         animation: slide-in 2s ease-in-out forwards;
     }
+
+    .letter {
+        animation-duration: 1s;
+    }
+
+    .letter-8 {
+        animation-delay: 1.4s;
+    }
+
+    .letter-7 {
+        animation-delay: 1.2s;
+    }
+    .letter-6 {
+        animation-delay: 1s;
+    }
+    .letter-5 {
+        animation-delay: .8s;
+    }
+    .letter-4 {
+        animation-delay: .6s;
+    }
+    .letter-3 {
+        animation-delay: .4s;
+    }
+    .letter-2 {
+        animation-delay: .2s;
+    }
+    .letter-1 {
+        animation-delay: 0s;
+    }
+
+
     
     @keyframes slide-in {
         0% { 
@@ -79,3 +111,20 @@
     .arrows path.a3 {	
         animation-delay:0s;
     }
+
+    // Slide 
+    
+    .slide{
+        animation: slide 10s linear infinite;
+    }
+
+    
+    @keyframes slide {
+        0% { 
+            transform: translateY(-240px); 
+            }
+        100% { 
+            transform: translateY(240px); 
+        }
+    }
+
