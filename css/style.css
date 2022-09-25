@@ -329,6 +329,22 @@ select:focus {
   outline: 0;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 * {
   font-family: "Oxygen", sans-serif;
   box-sizing: border-box;
@@ -363,14 +379,29 @@ body {
 
 .navbar {
   width: 100% !important;
+  background-color: rgba(29, 29, 29, 0.7) !important;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-custom-styling {
   background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.sticky-top {
-  position: absolute;
+.offcanvas {
+  background-color: #1d1d1d !important;
+}
+
+.nav-link:hover,
+.navbar-toggler:hover {
+  color: #0ABAB5;
+}
+
+.offcanvas-header button {
+  filter: invert(100%) sepia(4%) saturate(52%) hue-rotate(107deg) brightness(116%) contrast(100%);
+}
+
+.offcanvas-header button:hover {
+  filter: invert(68%) sepia(38%) saturate(5111%) hue-rotate(135deg) brightness(89%) contrast(104%);
 }
 
 .header-name,
@@ -413,6 +444,30 @@ body {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
   margin-right: 15px;
+}
+
+.contact-btn-header-div {
+  border: solid 2px #0ABAB5;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  padding: 10px 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact-btn-header-div a {
+  color: #0ABAB5;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-btn-header-div:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-btn-header-div:hover a {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .arrows {

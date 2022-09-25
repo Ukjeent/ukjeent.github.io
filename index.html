@@ -16,27 +16,34 @@
     <header>
 
         <!-- navbar -->
-        <nav id="nav-custom-styling" class="navbar navbar-dark navbar-expand-sm sticky-top bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand text-white-50" href="#">Bjorn Jakobsen</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+        <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bjorn Jakobsen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
             </div>
-          </nav>
+          </div>
+        </nav>
           <!-- /navbar -->
 
     </header>
@@ -86,6 +93,9 @@
                 <a href="">Projects</a>
                 <a href="">LinkedIn</a>
                 <a href="">About Me</a> 
+            </div>
+            <div class="contact-btn-header-div"> 
+              <a class="contact-btn-header" href="#">Contact me!</a>
             </div>
           </div>
           <div class="arrow-div">

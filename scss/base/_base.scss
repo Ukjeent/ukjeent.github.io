@@ -36,15 +36,32 @@ body {
 
 .navbar {
     width: 100% !important;
+    background-color: rgba(29, 29, 29, 0.7) !important;
+    color: $text-color-grey;
 }
 
 .nav-custom-styling {
     background-color: $text-color-grey !important;
 }
 
-.sticky-top {
-    position: absolute;
+.offcanvas {
+    background-color: #1d1d1d !important;
 }
+
+.nav-link:hover,
+.navbar-toggler:hover {
+    color: $color-hover;
+}
+
+.offcanvas-header button {
+    filter: invert(100%) sepia(4%) saturate(52%) hue-rotate(107deg) brightness(116%) contrast(100%);
+}
+
+.offcanvas-header button:hover {
+    filter: invert(68%) sepia(38%) saturate(5111%) hue-rotate(135deg) brightness(89%) contrast(104%);
+}
+
+
 
 // ======================================
 //  Header
@@ -92,6 +109,32 @@ body {
     font-size: 1rem;
     color: $text-color-grey;
     margin-right: 15px;
+}
+
+// Btn
+
+.contact-btn-header-div {
+    border: solid 2px $color-hover;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: border-color .3s ease-in-out;
+
+}
+.contact-btn-header-div a{
+    color: $color-hover;
+    transition: color .3s ease-in-out;
+}
+
+.contact-btn-header-div:hover {
+    border-color: $text-color-grey;
+}
+
+.contact-btn-header-div:hover a {
+    color: $text-color-grey;
 }
 
 // Scroll arrow

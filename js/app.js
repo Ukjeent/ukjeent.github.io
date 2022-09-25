@@ -12,6 +12,6 @@ const fadeIn = document.querySelectorAll('.fade-in');
 // });
 
 fadeIn.forEach((element, index) => {
-    const delay = (index + 5) / 15;
+    const delay = (index + 5) / 17;
     element.style.animationDelay = `${delay}s`;
 });
