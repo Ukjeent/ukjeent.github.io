@@ -115,7 +115,7 @@
     // Slide 
     
     .slide{
-        animation: slide 10s linear infinite;
+        animation: slide 7s linear infinite;
     }
 
     
@@ -128,3 +128,26 @@
         }
     }
 
+
+    // --play: 
+    // --direction: normal;
+    // --duration: 
+    // --delay: 0s;
+    // --iteration-count: 
+
+
+
+
+    .scroll{
+        animation: scroll 10s linear infinite;
+    }
+
+    
+    @keyframes scroll {
+        0% { 
+            transform: translateX(-100%); 
+            }
+        100% { 
+            transform: translateX(100%);
+        }
+    }
