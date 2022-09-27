@@ -352,6 +352,7 @@ a:active {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 45px;
   cursor: default;
   margin: 0;
   height: 100%;
