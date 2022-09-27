@@ -151,3 +151,20 @@
             transform: translateX(100%);
         }
     }
+
+
+    // Svg
+
+    @keyframes offset {
+
+        100% { 
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fill-it {
+
+        100% { 
+            fill: $text-color-grey;
+        }
+    }

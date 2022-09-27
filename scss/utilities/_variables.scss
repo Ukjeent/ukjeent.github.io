@@ -18,8 +18,14 @@
    $border-thin-yellow: 1px $text-color-yellow solid;
    $border-thin-grey: 1px $text-color-grey solid;
 
-   //Fonts
+   // Fonts
    $font-regular: 'Oxygen', sans-serif;
    $font-header: 'Rammetto One', cursive;
+
+   // Transitions
+   $transition-text-color: color .3s ease-in-out;
+   $transition-border-color: border-color .3s ease-in-out; 
+
+
 
  

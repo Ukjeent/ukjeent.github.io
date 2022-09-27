@@ -498,13 +498,13 @@ footer {
   stroke-width: 3px;
 }
 
-.skills-header,
+.contact-header,
 .project-header {
   padding-top: 0;
   margin: 50px 20px;
 }
 
-.skills-header .letter,
+.contact-header .letter,
 .project-header .letter {
   font-size: 2.5rem;
   font-weight: bolder;
@@ -637,8 +637,12 @@ footer {
   border-radius: 8px;
   padding: 20px;
   width: 80%;
-  height: 120px;
+  height: auto;
   color: rgb(10, 25, 47);
+}
+
+.project-text-container p {
+  margin: 0;
 }
 
 .project-tech-container {
@@ -683,6 +687,80 @@ footer {
 
 .project-btn-div:hover a {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section {
+  height: auto !important;
+}
+
+.contact-me-div {
+  margin: auto;
+  width: 60vw;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 100px;
+}
+
+.contact-me-header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+
+.contact-me-div p,
+.contact-me-div a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-me-div p {
+  font-weight: bolder;
+}
+
+.contact-me-div a {
+  color: rgb(10, 186, 181);
+  font-weight: normal;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-me-div a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.linkedin-svg,
+.github-svg {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  stroke: rgb(10, 186, 181);
+  transition: transform 0.3s ease-in-out, stroke 0.3s ease-in;
+}
+
+.linkedin-svg:hover,
+.github-svg:hover {
+  transform: translateY(-4px) rotate(2deg);
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.linkedin-svg {
+  stroke-dasharray: 62;
+  stroke-dashoffset: 62;
+  animation: offset 2s linear forwards;
+}
+
+.github-svg {
+  stroke-dasharray: 67;
+  stroke-dashoffset: 67;
+  animation: offset 2s linear forwards;
 }
 
 @keyframes fadeIn {
@@ -834,6 +912,16 @@ footer {
     transform: translateX(100%);
   }
 }
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill-it {
+  100% {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+}
 @media (min-width: 550px) {
   .line-break-mob {
     display: none;
@@ -841,7 +929,7 @@ footer {
   .main-header span {
     font-size: 2.2rem;
   }
-  .skills-header .letter,
+  .contact-header .letter,
 .project-header .letter {
     font-size: 5rem;
   }
@@ -859,7 +947,7 @@ footer {
   .header-div {
     padding-top: 200px;
   }
-  .skills-header .letter,
+  .contact-header .letter,
 .project-header .letter {
     font-size: 7rem;
   }

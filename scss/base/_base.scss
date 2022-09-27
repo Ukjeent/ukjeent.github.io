@@ -93,7 +93,7 @@ footer {
     font-size: 2rem;
     color: white;
     opacity: 0;
-    transition: color .3s ease-in-out;
+    transition: $transition-text-color;
     margin-right: -7px;
 }
 
@@ -102,7 +102,7 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     color: $text-color-grey;
-    transition: color .3s ease-in-out;
+    transition: $transition-text-color;
     width: fit-content;
 }
 
@@ -127,12 +127,12 @@ footer {
     text-align: center;
     padding: 10px 10px;
     margin-top: 20px;
-    transition: border-color .3s ease-in-out;
+    transition: $transition-border-color;
 
 }
 .contact-btn-header-div a{
     color: $color-hover;
-    transition: color .3s ease-in-out;
+    transition: $transition-text-color;
 }
 
 .contact-btn-header-div:hover {
@@ -170,17 +170,17 @@ footer {
 
 
 // ======================================
-//  Skills section
+//  Contact section
 // ======================================
 
 
-.skills-header,
+.contact-header,
 .project-header {
         padding-top: 0;
         margin: 50px 20px;
 }
 
-.skills-header .letter,
+.contact-header .letter,
 .project-header .letter {
         font-size: 2.5rem;
         font-weight: bolder;
@@ -190,7 +190,7 @@ footer {
 
 .letter {
     display: inline-block;
-    transition: color .3s ease-in-out;
+    transition: $transition-text-color;
 }
 
 .letter:hover {
@@ -325,8 +325,12 @@ footer {
     border-radius: 8px;
     padding: 20px;
     width: 80%;
-    height: 120px;
+    height: auto;
     color: $color-bg;
+}
+
+.project-text-container  p{
+    margin: 0;
 }
 
 .project-tech-container {
@@ -341,7 +345,7 @@ footer {
     border-radius: 5px;
     padding: 2px 10px;
     margin: 15px 5px;
-    transition: color .3s ease-in-out, border-color .3s ease-in-out;
+    transition: color .3s ease-in-out, $transition-border-color;
 }
 
 .project-tech-container li:hover {
@@ -356,13 +360,13 @@ footer {
     width: 150px;
     text-align: center;
     padding: 5px 5px;
-    transition: border-color .3s ease-in-out;
+    transition: $transition-border-color;
     margin-bottom: 30px;
 }
 
 .project-btn-div a{
     color: $color-hover;
-    transition: color .3s ease-in-out;
+    transition: $transition-text-color;
 }
 
 .project-btn-div:hover {
@@ -373,3 +377,82 @@ footer {
     color: $text-color-grey;
 }
 
+// ======================================
+//  Contact section
+// ======================================
+
+
+.contact-section {
+    height: auto !important;
+}
+
+.contact-me-div {
+    margin: auto;
+    width: 60vw;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+
+.contact-me-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.contact-me-div p,
+.contact-me-div a{
+    color: $text-color-grey;
+}
+
+.contact-me-div p {
+    font-weight: bolder;
+}
+
+.contact-me-div a {
+    color: $color-hover;
+    font-weight: normal;
+    transition: $transition-text-color;
+}
+
+.contact-me-div a:hover {
+    color: $text-color-grey;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.linkedin-svg,
+.github-svg {
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+    stroke: $color-hover;
+    transition: transform .3s ease-in-out, stroke .3s ease-in;
+}
+
+.linkedin-svg:hover,
+.github-svg:hover  {
+    transform: translateY(-4px) rotate(2deg);
+    stroke: $text-color-grey;
+}
+
+.linkedin-svg {
+    stroke-dasharray: 62;
+    stroke-dashoffset: 62;
+    animation: offset 2s linear forwards;
+}
+
+.github-svg {
+    stroke-dasharray: 67;
+    stroke-dashoffset: 67;
+    animation: offset 2s linear forwards;
+}
