@@ -20,38 +20,8 @@ fadeIn.forEach((element, index) => {
 // Reveal elements 
 
 // SlideIn
-function revealSlideIn() {
-    const reveals = document.querySelectorAll('.slide-in-on-scroll');
-    for (var i = 0; i < reveals.length; i++) {
-        const windowHeight = window.innerHeight;
-        const elementTop = reveals[i].getBoundingClientRect().top;
-        const elementVisible = 150;
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("in-view");
-          } else {
-            reveals[i].classList.remove("in-view");
-          }
-      }
-}
-
-//SlideUp
-function revealSlideUp() {
-    const reveals = document.querySelectorAll('.fade-in-on-scroll');
-    for (var i = 0; i < reveals.length; i++) {
-        const windowHeight = window.innerHeight;
-        const elementTop = reveals[i].getBoundingClientRect().top;
-        const elementVisible = 150;
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("in-view");
-          } else {
-            reveals[i].classList.remove("in-view");
-          }
-      }
-}
-
-// SlideIn
-function revealStroke() {
-    const reveals = document.querySelectorAll('.stroke');
+function reveal(element) {
+    const reveals = document.querySelectorAll(element);
     for (var i = 0; i < reveals.length; i++) {
         const windowHeight = window.innerHeight;
         const elementTop = reveals[i].getBoundingClientRect().top;
@@ -65,7 +35,7 @@ function revealStroke() {
 }
 
 window.addEventListener("scroll", () => {
-    revealSlideUp();
-    revealSlideIn();
-    revealStroke();
+    reveal('.slide-in-on-scroll');
+    reveal('.fade-in-on-scroll');
+    reveal('.stroke');
 });
