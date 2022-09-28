@@ -19,12 +19,12 @@
 
     // Slide in
 
-    .slide-in{
+    .slide-in {
         transform: translateX(-200%);
         animation: slide-in 2s ease-in-out forwards;
     }
 
-    .slide-in-on-scroll.in-view{
+    .slide-in-on-scroll.in-view {
         transform: translateX(-200%);
         animation: slide-in 2s ease-in-out forwards;
     }
