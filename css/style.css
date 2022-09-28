@@ -516,6 +516,7 @@ footer {
 .letter {
   display: inline-block;
   transition: color 0.3s ease-in-out;
+  opacity: 0;
 }
 
 .letter:hover {
@@ -615,10 +616,12 @@ footer {
   border-radius: 8px;
   object-fit: cover;
   object-position: center;
+  opacity: 0;
 }
 
 .project-h3 {
   margin-top: 20px;
+  opacity: 0;
 }
 
 .project-h3 a {
@@ -640,6 +643,7 @@ footer {
   width: 80%;
   height: auto;
   color: rgb(10, 25, 47);
+  opacity: 0;
 }
 
 .project-text-container p {
@@ -648,6 +652,7 @@ footer {
 
 .project-tech-container {
   display: flex;
+  opacity: 0;
 }
 
 .project-tech-container li {
@@ -675,6 +680,7 @@ footer {
   padding: 5px 5px;
   transition: border-color 0.3s ease-in-out;
   margin-bottom: 30px;
+  opacity: 0;
 }
 
 .project-btn-div a {
@@ -755,12 +761,14 @@ footer {
 .linkedin-svg {
   stroke-dasharray: 62;
   stroke-dashoffset: 62;
-  animation: offset 2s linear forwards;
 }
 
 .github-svg {
   stroke-dasharray: 67;
   stroke-dashoffset: 67;
+}
+
+.stroke.in-view {
   animation: offset 2s linear forwards;
 }
 
@@ -777,9 +785,17 @@ footer {
   animation-duration: 2s;
 }
 
+.fade-in-on-scroll.in-view {
+  animation: fadeIn 2s ease-in forwards;
+}
+
 .slide-in {
   transform: translateX(-200%);
-  opacity: 0;
+  animation: slide-in 2s ease-in-out forwards;
+}
+
+.slide-in-on-scroll.in-view {
+  transform: translateX(-200%);
   animation: slide-in 2s ease-in-out forwards;
 }
 
@@ -841,6 +857,11 @@ footer {
 .slide-up {
   transform: translateY(800%);
   opacity: 0;
+  animation: slide-up 2s ease-in-out forwards;
+}
+
+.slide-up-on-scroll.in-view {
+  transform: translateY(800%);
   animation: slide-up 2s ease-in-out forwards;
 }
 

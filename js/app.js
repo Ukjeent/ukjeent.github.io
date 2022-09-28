@@ -15,3 +15,57 @@ fadeIn.forEach((element, index) => {
     const delay = (index + 5) / 17;
     element.style.animationDelay = `${delay}s`;
 });
+
+
+// Reveal elements 
+
+// SlideIn
+function revealSlideIn() {
+    const reveals = document.querySelectorAll('.slide-in-on-scroll');
+    for (var i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("in-view");
+          } else {
+            reveals[i].classList.remove("in-view");
+          }
+      }
+}
+
+//SlideUp
+function revealSlideUp() {
+    const reveals = document.querySelectorAll('.fade-in-on-scroll');
+    for (var i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("in-view");
+          } else {
+            reveals[i].classList.remove("in-view");
+          }
+      }
+}
+
+// SlideIn
+function revealStroke() {
+    const reveals = document.querySelectorAll('.stroke');
+    for (var i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("in-view");
+          } else {
+            reveals[i].classList.remove("in-view");
+          }
+      }
+}
+
+window.addEventListener("scroll", () => {
+    revealSlideUp();
+    revealSlideIn();
+    revealStroke();
+});
