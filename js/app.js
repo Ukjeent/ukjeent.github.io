@@ -142,7 +142,6 @@ const letters = document.querySelectorAll('.letter')
 
 document.addEventListener('click', (e) => {
     if(e.target.classList.contains('letter')) {
-        console.log('correct btn')
         letters.forEach( element => {
             if(!element.classList.contains('color-switch-bg')) {
             element.classList.add('color-switch-bg');
