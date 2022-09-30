@@ -468,3 +468,22 @@ footer {
 .stroke.in-view {
     animation: offset 2s linear forwards;
 }
+
+.purle-bg {
+    background-color: $color-purple;
+}
+
+.purle-txt {
+    background-color: $color-purple;
+}
+
+.color-switch-bg {
+    color: $color-hover !important;
+}
+
+.color-switch-bg:hover {
+    color: $text-color-grey !important;
+}
+
+
+

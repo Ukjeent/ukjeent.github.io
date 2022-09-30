@@ -1,15 +1,9 @@
 
-
+//
 // Header animation
+//
 
 const fadeIn = document.querySelectorAll('.fade-in');
-
-// fadeIn.forEach(element => {
-//     const duration = Math.random() * 2;
-//     const delay = Math.random() * 2;
-//     element.style.animationDuration = `${duration}s`;
-//     element.style.animationDelay = `${delay}s`;
-// });
 
 fadeIn.forEach((element, index) => {
     const delay = (index + 5) / 17;
@@ -17,7 +11,10 @@ fadeIn.forEach((element, index) => {
 });
 
 
+
+//
 // Reveal elements 
+//
 
 // SlideIn
 function reveal(element) {
@@ -41,10 +38,13 @@ window.addEventListener("scroll", () => {
 });
 
 
+//
 // Projects
+//
 
 const projects = document.querySelector('.projects');
 
+// Project information
 const projectArray = [
     {
         name: 'Employee Directory',
@@ -83,6 +83,8 @@ const projectArray = [
     },
 ];
 
+
+// Loops through the projects in the projectArray and and appends the projects. 
 
 projectArray.forEach( element => {
 
@@ -132,3 +134,21 @@ projectArray.forEach( element => {
     
 }); 
 
+//
+// Change color and hover color for all section headers on click. 
+//
+
+const letters = document.querySelectorAll('.letter')
+
+document.addEventListener('click', (e) => {
+    if(e.target.classList.contains('letter')) {
+        console.log('correct btn')
+        letters.forEach( element => {
+            if(!element.classList.contains('color-switch-bg')) {
+            element.classList.add('color-switch-bg');
+        } else {
+            element.classList.remove('color-switch-bg');
+        }
+    });
+    }
+});

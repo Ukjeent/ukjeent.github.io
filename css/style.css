@@ -772,6 +772,22 @@ footer {
   animation: offset 2s linear forwards;
 }
 
+.purle-bg {
+  background-color: rgb(127, 17, 224);
+}
+
+.purle-txt {
+  background-color: rgb(127, 17, 224);
+}
+
+.color-switch-bg {
+  color: rgb(10, 186, 181) !important;
+}
+
+.color-switch-bg:hover {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
