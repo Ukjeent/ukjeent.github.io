@@ -1,31 +1,27 @@
- /* ============================================= */
-  /*              Variables                       */
-  /* ============================================= */
+/* ============================================= */
+/*              Variables                       */
+/* ============================================= */
 
-   // Colors
-   $color-main: #7477BF;
-   $text-color-grey: rgba(255,255,255,.5);
-   $text-color-grey-transparent:rgba(255,255,255,0.2);
-   $text-color-yellow: #fad505;
-   $color-hover: rgba(10, 186, 181, 1);
-   $color-hover-transparent: rgba(10, 186, 181, .5);
-   $color-transparent: rgba(10, 186, 181, 0);
-   $color-bg: rgba(10, 25, 47, 1);
-   $color-bg-transparent: rgba(10, 25, 47, .5);
-   $color-purple: rgba(127, 17, 224, 1);
+// Colors
+$color-main: #7477bf;
+$text-color-grey: rgba(255, 255, 255, 0.5);
+$text-color-grey-transparent: rgba(255, 255, 255, 0.2);
+$text-color-yellow: #fad505;
+$color-hover: rgba(10, 186, 181, 1);
+$color-hover-transparent: rgba(10, 186, 181, 0.5);
+$color-transparent: rgba(10, 186, 181, 0);
+$color-bg: rgba(10, 25, 47, 1);
+$color-bg-transparent: rgba(10, 25, 47, 0.5);
+$color-purple: rgba(127, 17, 224, 1);
 
-   // Border
-   $border-thin-yellow: 1px $text-color-yellow solid;
-   $border-thin-grey: 1px $text-color-grey solid;
+// Border
+$border-thin-yellow: 1px $text-color-yellow solid;
+$border-thin-grey: 1px $text-color-grey solid;
 
-   // Fonts
-   $font-regular: 'Oxygen', sans-serif;
-   $font-header: 'Rammetto One', cursive;
+// Fonts
+$font-regular: "Oxygen", sans-serif;
+$font-header: "Rammetto One", cursive;
 
-   // Transitions
-   $transition-text-color: color .3s ease-in-out;
-   $transition-border-color: border-color .3s ease-in-out; 
-
-
-
- 
+// Transitions
+$transition-text-color: color 0.3s ease-in-out;
+$transition-border-color: border-color 0.3s ease-in-out;

@@ -1,35 +1,35 @@
 * {
-    font-family: $font-regular;
-    box-sizing: border-box;
+  font-family: $font-regular;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 45px;
-    cursor: default;
-    margin: 0;
-    height:100%;
-    width:100%;
-    padding:0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 45px;
+  cursor: default;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 body {
-    background-color: $color-bg;
-    margin: auto;
-    margin: 0;
-    height:100%;
-    width:100%;
-    padding:0;
+  background-color: $color-bg;
+  margin: auto;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .page {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 // ======================================
@@ -37,38 +37,38 @@ footer {
 // ======================================
 
 #nav-custom-styling {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .navbar {
-    width: 100% !important;
-    background-color: $color-bg-transparent !important;
-    color: $text-color-grey;
+  width: 100% !important;
+  background-color: $color-bg-transparent !important;
+  color: $text-color-grey;
 }
 
 .nav-custom-styling {
-    background-color: $text-color-grey !important;
+  background-color: $text-color-grey !important;
 }
 
 .offcanvas {
-    background-color: $color-bg !important;
-    max-width: 50% !important;
+  background-color: $color-bg !important;
+  max-width: 50% !important;
 }
 
 .nav-link:hover,
 .navbar-toggler:hover {
-    color: $color-hover;
+  color: $color-hover;
 }
 
 .offcanvas-header button {
-    filter: invert(100%) sepia(4%) saturate(52%) hue-rotate(107deg) brightness(116%) contrast(100%);
+  filter: invert(100%) sepia(4%) saturate(52%) hue-rotate(107deg)
+    brightness(116%) contrast(100%);
 }
 
 .offcanvas-header button:hover {
-    filter: invert(68%) sepia(38%) saturate(5111%) hue-rotate(135deg) brightness(89%) contrast(104%);
+  filter: invert(68%) sepia(38%) saturate(5111%) hue-rotate(135deg)
+    brightness(89%) contrast(104%);
 }
-
-
 
 // ======================================
 //  Header
@@ -77,413 +77,400 @@ footer {
 .header-name,
 .header-title,
 .header-nav {
-    text-align: left;
+  text-align: left;
 }
 
 .header-div {
-    padding: 180px 20px 0 20px;
+  padding: 180px 20px 0 20px;
 }
-
 
 .main-header {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-.main-header span{
-    font-family: $font-header;
-    font-size: 2rem;
-    color: white;
-    opacity: 0;
-    transition: $transition-text-color;
-    margin-right: -7px;
+.main-header span {
+  font-family: $font-header;
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+  transition: $transition-text-color;
+  margin-right: -7px;
 }
-
 
 .header-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $text-color-grey;
-    transition: $transition-text-color;
-    width: fit-content;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $text-color-grey;
+  transition: $transition-text-color;
+  width: fit-content;
 }
 
 .main-header span:hover,
 .header-title:hover,
 .header-nav a:hover {
-    color: $color-hover;
+  color: $color-hover;
 }
 
-.header-nav a{
-    font-size: 1rem;
-    color: $text-color-grey;
-    margin-right: 15px;
+.header-nav a {
+  font-size: 1rem;
+  color: $text-color-grey;
+  margin-right: 15px;
 }
 
 // Btn
 
 .contact-btn-header-div {
-    border: solid 2px $color-hover;
-    border-radius: 5px;
-    width: 150px;
-    text-align: center;
-    padding: 10px 10px;
-    margin-top: 20px;
-    transition: $transition-border-color;
-
+  border: solid 2px $color-hover;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  padding: 10px 10px;
+  margin-top: 20px;
+  transition: $transition-border-color;
 }
-.contact-btn-header-div a{
-    color: $color-hover;
-    transition: $transition-text-color;
+.contact-btn-header-div a {
+  color: $color-hover;
+  transition: $transition-text-color;
 }
 
 .contact-btn-header-div:hover {
-    border-color: $text-color-grey;
+  border-color: $text-color-grey;
 }
 
 .contact-btn-header-div:hover a {
-    color: $text-color-grey;
+  color: $text-color-grey;
 }
 
 // Scroll arrow
 
 .arrows {
-	width: 60px;
-	height: 72px;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 20px;
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
 }
 
 .arrows path {
-    stroke: $text-color-grey-transparent;
-    fill: transparent;
-    stroke-width: 2px;	
-    animation: arrow 2s infinite;
-    transition: stroke .3s ease-in-out, stroke-width 1.5s ease-in-out;
+  stroke: $text-color-grey-transparent;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  transition: stroke 0.3s ease-in-out, stroke-width 1.5s ease-in-out;
 }
 
 .arrows:hover > path {
-    stroke: $color-hover;
-    stroke-width: 3px;	
+  stroke: $color-hover;
+  stroke-width: 3px;
 }
-
-
 
 // ======================================
 //  Contact section
 // ======================================
 
-
 .contact-header,
 .project-header {
-        padding-top: 0;
-        margin: 50px 20px;
+  padding-top: 0;
+  margin: 50px 20px;
 }
 
 .contact-header .letter,
 .project-header .letter {
-        font-size: 2.5rem;
-        font-weight: bolder;
-        font-family: $font-header;
-        color: $text-color-grey;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: $font-header;
+  color: $text-color-grey;
 }
 
 .letter {
-    display: inline-block;
-    transition: $transition-text-color;
-    opacity: 0;
+  display: inline-block;
+  transition: $transition-text-color;
+  opacity: 0;
 }
 
 .letter:hover {
-    color: $color-hover;
+  color: $color-hover;
 }
 
-
 .rotating-li-div {
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-    display: block;
-    background: linear-gradient(to top, $color-transparent, $color-transparent, $color-bg-transparent);
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: block;
+  background: linear-gradient(
+    to top,
+    $color-transparent,
+    $color-transparent,
+    $color-bg-transparent
+  );
 }
 
 // Rotating list of skills
 
 .skills-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .skills-list > li {
-    color: $color-hover;
-    border: 1px solid $color-hover;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 30px;
+  color: $color-hover;
+  border: 1px solid $color-hover;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 30px;
 }
 
 .flex-container {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 70px;
-    margin: auto;
-    overflow: hidden;
-    margin-bottom: 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 70px;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 0;
 }
-
-
 
 // ======================================
 //  Project section
 // ======================================
 
 .project-section {
-    height: auto !important;
+  height: auto !important;
 }
 
 .projects {
-    width: 85vw;
-    margin: auto;
+  width: 85vw;
+  margin: auto;
 }
 
 .project {
-    position: relative;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
-    margin: auto;
-    margin-bottom: 100px;
-    max-width: 900px;
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 900px;
 }
 
 .bg-div {
-    content: "";
-    position: absolute;
-    background-image: url("../images/employee_directory.png");
-    background-blend-mode: overlay;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
+  content: "";
+  position: absolute;
+  background-image: url("../images/employee_directory.png");
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    order: 1;
-    // grid-column: 5 / -1;
-    text-align: center;
-    z-index: 2;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+  // grid-column: 5 / -1;
+  text-align: center;
+  z-index: 2;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 .project-image-div {
-    width: auto;
-    height: 100%;
-    margin: auto;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    z-index: 1;
-    opacity: 0.1;
-
+  width: auto;
+  height: 100%;
+  margin: auto;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 1;
+  opacity: 0.1;
 }
 
 .project-image {
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
 }
 
 .project-h3 {
-    margin-top: 20px;
-    opacity: 0;
+  margin-top: 20px;
+  opacity: 0;
 }
 
-
 .project-h3 a {
-    font-family: $font-regular;
-    font-size: 1.6rem;
-    font-weight: bolder;
-    color: rgba(255, 255, 255, 0.6);
-    color: $color-hover;
+  font-family: $font-regular;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.6);
+  color: $color-hover;
 }
 
 .project-h3 a:hover {
-    color: $text-color-grey;
+  color: $text-color-grey;
 }
-
 
 .project-text-container {
-    background-color: $color-hover;
-    border-radius: 8px;
-    padding: 20px;
-    width: 80%;
-    height: auto;
-    color: $color-bg;
-    opacity: 0;
+  background-color: $color-hover;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  color: $color-bg;
+  opacity: 0;
 }
 
-.project-text-container  p{
-    margin: 0;
+.project-text-container p {
+  margin: 0;
 }
 
 .project-tech-container {
-    display: flex;
-    opacity: 0;
+  display: flex;
+  opacity: 0;
 }
 
-.project-tech-container li{
-    color: $color-hover;
-    border: 1px solid $color-hover;
-    background-color: $color-bg;
-    font-size: .8rem;
-    border-radius: 5px;
-    padding: 2px 10px;
-    margin: 15px 5px;
-    transition: color .3s ease-in-out, $transition-border-color;
+.project-tech-container li {
+  color: $color-hover;
+  border: 1px solid $color-hover;
+  background-color: $color-bg;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin: 15px 5px;
+  transition: color 0.3s ease-in-out, $transition-border-color;
 }
 
 .project-tech-container li:hover {
-    border-color: $text-color-grey;
-    color: $text-color-grey;
+  border-color: $text-color-grey;
+  color: $text-color-grey;
 }
 
 .project-btn-div {
-    border: solid 2px $color-hover;
-    background-color: $color-bg;
-    border-radius: 5px;
-    width: 150px;
-    text-align: center;
-    padding: 5px 5px;
-    transition: $transition-border-color;
-    margin-bottom: 30px;
-    opacity: 0;
+  border: solid 2px $color-hover;
+  background-color: $color-bg;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  padding: 5px 5px;
+  transition: $transition-border-color;
+  margin-bottom: 30px;
+  opacity: 0;
 }
 
-.project-btn-div a{
-    color: $color-hover;
-    transition: $transition-text-color;
+.project-btn-div a {
+  color: $color-hover;
+  transition: $transition-text-color;
 }
 
 .project-btn-div:hover {
-    border-color: $text-color-grey;
+  border-color: $text-color-grey;
 }
 
 .project-btn-div:hover a {
-    color: $text-color-grey;
+  color: $text-color-grey;
 }
 
 // ======================================
 //  Contact section
 // ======================================
 
-
 .contact-section {
-    height: auto !important;
+  height: auto !important;
 }
 
 .contact-me-div {
-    margin: auto;
-    width: 60vw;
-    text-align: center;
-    padding-bottom: 200px;
-    padding-top: 100px;
+  margin: auto;
+  width: 60vw;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 
 .contact-me-header {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
 }
 
 .contact-me-div p,
-.contact-me-div a{
-    color: $text-color-grey;
+.contact-me-div a {
+  color: $text-color-grey;
 }
 
 .contact-me-div p {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .contact-me-div a {
-    color: $color-hover;
-    font-weight: normal;
-    transition: $transition-text-color;
+  color: $color-hover;
+  font-weight: normal;
+  transition: $transition-text-color;
 }
 
 .contact-me-div a:hover {
-    color: $text-color-grey;
+  color: $text-color-grey;
 }
 
 .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .linkedin-svg,
 .github-svg {
-    width: 100px;
-    height: 100px;
-    margin: 0 20px;
-    stroke: $color-hover;
-    transition: transform .3s ease-in-out, stroke .3s ease-in;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  stroke: $color-hover;
+  transition: transform 0.3s ease-in-out, stroke 0.3s ease-in;
 }
 
 .linkedin-svg:hover,
-.github-svg:hover  {
-    transform: translateY(-4px) rotate(2deg);
-    stroke: $text-color-grey;
+.github-svg:hover {
+  transform: translateY(-4px) rotate(2deg);
+  stroke: $text-color-grey;
 }
 
 .linkedin-svg {
-    stroke-dasharray: 62;
-    stroke-dashoffset: 62;
-    // animation: offset 2s linear forwards;
+  stroke-dasharray: 62;
+  stroke-dashoffset: 62;
+  // animation: offset 2s linear forwards;
 }
 
 .github-svg {
-    stroke-dasharray: 67;
-    stroke-dashoffset: 67;
-    
+  stroke-dasharray: 67;
+  stroke-dashoffset: 67;
 }
 
 .stroke.in-view {
-    animation: offset 2s linear forwards;
+  animation: offset 2s linear forwards;
 }
 
 .purle-bg {
-    background-color: $color-purple;
+  background-color: $color-purple;
 }
 
 .purle-txt {
-    background-color: $color-purple;
+  background-color: $color-purple;
 }
 
 .color-switch-bg {
-    color: $color-hover !important;
+  color: $color-hover !important;
 }
 
 .color-switch-bg:hover {
-    color: $text-color-grey !important;
+  color: $text-color-grey !important;
 }
-
-
-
