@@ -454,26 +454,20 @@ footer {
   margin-right: 15px;
 }
 
-.contact-btn-header-div {
+.contact-btn-header {
+  display: block;
   border: solid 2px rgb(10, 186, 181);
   border-radius: 5px;
   width: 150px;
   text-align: center;
   padding: 10px 10px;
   margin-top: 20px;
-  transition: border-color 0.3s ease-in-out;
-}
-
-.contact-btn-header-div a {
+  transition: all 0.3s ease-in-out;
   color: rgb(10, 186, 181);
-  transition: color 0.3s ease-in-out;
 }
 
-.contact-btn-header-div:hover {
+.contact-btn-header:hover {
   border-color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-btn-header-div:hover a {
   color: rgba(255, 255, 255, 0.5);
 }
 

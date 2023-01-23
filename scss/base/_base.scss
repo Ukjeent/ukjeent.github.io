@@ -119,27 +119,23 @@ footer {
 
 // Btn
 
-.contact-btn-header-div {
+.contact-btn-header {
+  display: block;
   border: solid 2px $color-hover;
   border-radius: 5px;
   width: 150px;
   text-align: center;
   padding: 10px 10px;
   margin-top: 20px;
-  transition: $transition-border-color;
-}
-.contact-btn-header-div a {
+  transition: all .3s ease-in-out;
   color: $color-hover;
-  transition: $transition-text-color;
 }
 
-.contact-btn-header-div:hover {
+.contact-btn-header:hover {
   border-color: $text-color-grey;
-}
-
-.contact-btn-header-div:hover a {
   color: $text-color-grey;
 }
+
 
 // Scroll arrow
 
