@@ -665,28 +665,22 @@ footer {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.project-btn-div {
+.project-btn {
+  display: block;
   border: solid 2px rgb(10, 186, 181);
   background-color: rgb(10, 25, 47);
   border-radius: 5px;
   width: 150px;
   text-align: center;
   padding: 5px 5px;
-  transition: border-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-bottom: 30px;
   opacity: 0;
-}
-
-.project-btn-div a {
   color: rgb(10, 186, 181);
-  transition: color 0.3s ease-in-out;
 }
 
-.project-btn-div:hover {
+.project-btn:hover {
   border-color: rgba(255, 255, 255, 0.5);
-}
-
-.project-btn-div:hover a {
   color: rgba(255, 255, 255, 0.5);
 }
 
