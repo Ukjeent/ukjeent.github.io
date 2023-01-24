@@ -45,14 +45,14 @@ const projectArray = [
   {
     name: "Employee Directory",
     text: "An employee directory using a third-party API to fetch random employees. Includes features like a modal window and search functionality.",
-    url: "https://ukjeent.github.io/employee_directory/",
+    url: "/employee_directory",
     image: "images/employee_directory.png",
     skills: ["JavaScript", "HTML", "CSS", "API"],
   },
   {
     name: "WebApp Dashboard",
     text: "An interactive dashboard for a web application including SVG graphics, tables, interactive charts and form validation. LocalStorage is used to save changes in the settings section.",
-    url: "https://ukjeent.github.io/web_app_dashboard/",
+    url: "/web_app_dashboard",
     image: "images/dashboard.png",
     skills: ["JavaScript", "HTML", "CSS", "SASS"],
   },
@@ -66,7 +66,7 @@ const projectArray = [
 //   {
 //     name: "Wheel Of Success",
 //     text: "A word guessing game where players click letters on an on-screen keyboard to try to guess a random sentence. JavaScript is used for the game functionality.",
-//     url: "https://ukjeent.github.io/game_show_app/",
+//     url: "/game_show_app",
 //     image: "images/wheel_of_success.png",
 //     skills: ["JavaScript", "HTML", "CSS"],
 //   },
@@ -80,7 +80,7 @@ const projectArray = [
   {
     name: "Online Registration Form",
     text: "A responsive, mobile-first registration form using HTML forms and CSS.",
-    url: "https://ukjeent.github.io/online-registration-form-project/",
+    url: "/online-registration-form-project",
     image: "images/online-form.png",
     skills: ["JavaScript", "HTML", "CSS", "SASS"],
   },
