@@ -73,7 +73,7 @@ const projectArray = [
   {
     name: "Phrase Hunter",
     text: "A browser-based, word guessing game. JavaScript and Object-Oriented Programming is used to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard or using the keyboard.",
-    url: "https://bjorn-jakobsen.com/oop-game-show-app-fs/",
+    url: "/oop-game-show-app-fs",
     image: "images/wheel_of_success.png",
     skills: ["JavaScript", "OOP", "HTML", "CSS"],
   },
