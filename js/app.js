@@ -59,7 +59,7 @@ const projectArray = [
   {
     name: "Image Gallery",
     text: "An interactive searchable image gallery with lightbox functionality, built with HTML, CSS and JavaScript.",
-    url: "https://ukjeent.github.io/photo_gallery_project/",
+    url: "/photo_gallery_project",
     image: "images/gallery.png",
     skills: ["JavaScript", "HTML", "CSS", "SASS"],
   },
