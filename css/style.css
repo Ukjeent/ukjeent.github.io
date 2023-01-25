@@ -666,16 +666,15 @@ footer {
 }
 
 .project-btn {
-  display: block;
   border: solid 2px rgb(10, 186, 181);
   background-color: rgb(10, 25, 47);
   border-radius: 5px;
   width: 150px;
   text-align: center;
   padding: 5px 5px;
+  opacity: 0;
   transition: all 0.3s ease-in-out;
   margin-bottom: 30px;
-  opacity: 0;
   color: rgb(10, 186, 181);
 }
 

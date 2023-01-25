@@ -352,18 +352,18 @@ footer {
 //New btn
 
 .project-btn {
-  display: block;
   border: solid 2px $color-hover;
   background-color: $color-bg;
   border-radius: 5px;
   width: 150px;
   text-align: center;
   padding: 5px 5px;
+  opacity: 0;
   transition: all .3s ease-in-out;
   margin-bottom: 30px;
-  opacity: 0;
   color: $color-hover;
 }
+
 
 .project-btn:hover {
   border-color: $text-color-grey;
