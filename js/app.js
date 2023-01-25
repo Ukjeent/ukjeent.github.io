@@ -113,11 +113,11 @@ projectArray.forEach((element) => {
 
   techUl.innerHTML = li;
 
-  const projectBtnDiv = document.createElement("a");
-  projectBtnDiv.className = "project-btn slide-in-on-scroll";
-  projectBtnDiv.href = `${element.url}`;
-  projectBtnDiv.target = `_blank`;
-  projectBtnDiv.textContent = `Open project`;
+  const projectBtnDiv = document.createElement("div");
+  projectBtnDiv.className = "slide-in-on-scroll";
+  projectBtnDiv.innerHTML = `<a class="project-btn slide-in-on-scroll" href="${element.url}" target="_blank">Open project</a>`;
+
+    
 
   const imageA = document.createElement("a");
   imageA.className = "project-image-div";
