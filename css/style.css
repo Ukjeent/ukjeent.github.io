@@ -689,7 +689,8 @@ footer {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  max-width: 500px;
+  width: 300px;
+  max-width: 100%;
   margin-bottom: 10px;
 }
 
@@ -700,16 +701,15 @@ footer {
   padding: 10px;
   border: none;
   margin: 5px 0;
+  width: 100%;
 }
 
 input.contact-input {
   height: 30px;
-  width: 70%;
 }
 
 textarea.contact-input {
   height: 150px;
-  width: 70%;
 }
 
 .contact-form-btn {
