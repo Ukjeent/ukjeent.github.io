@@ -374,6 +374,56 @@ footer {
 //  Contact section
 // ======================================
 
+// Forms
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.contact-input {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(10, 186, 181);
+  padding: 10px;
+  border: none;
+  margin: 5px 0;
+}
+
+input.contact-input {
+  height: 30px;
+  width: 70%;
+}
+
+textarea.contact-input {
+  height: 150px;
+  width: 70%;
+}
+
+.contact-form-btn {
+  margin-top: 8px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(10, 186, 181);
+  font-weight: bold;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+
+.contact-form-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.04);
+}
+
+
+// Forms end
+
 .contact-section {
   height: auto !important;
 }
@@ -382,8 +432,8 @@ footer {
   margin: auto;
   width: 60vw;
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-top: 0;
 }
 
 .contact-me-header {
@@ -418,7 +468,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 45px;
 }
 
 .linkedin-svg,

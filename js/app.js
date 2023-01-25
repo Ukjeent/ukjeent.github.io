@@ -153,3 +153,12 @@ document.addEventListener("click", (e) => {
     });
   }
 });
+
+//
+// Decode email
+//
+
+let encEmail = "Ympvcm4uamFrb2JzZW45MUBnbWFpbC5jb20=";
+const form = document.getElementById("contact-email");
+form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+form.textContent = "".concat(atob(encEmail));
