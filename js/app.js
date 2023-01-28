@@ -43,6 +43,13 @@ const projects = document.querySelector(".projects");
 // Project information
 const projectArray = [
   {
+    name: "Interactive registration form",
+    text: "An interactive registration form for a fictional Full Stack conference with conditional behavior and interactivity. The form validates user input with error messages.",
+    url: "/interactive-form",
+    image: "images/interactive_form.png",
+    skills: ["JavaScript", "HTML", "CSS"],
+  },
+  {
     name: "Employee Directory",
     text: "An employee directory using a third-party API to fetch random employees. Includes features like a modal window and search functionality.",
     url: "/employee_directory",
@@ -57,20 +64,6 @@ const projectArray = [
     skills: ["JavaScript", "HTML", "CSS", "SASS"],
   },
   {
-    name: "Image Gallery",
-    text: "An interactive searchable image gallery with lightbox functionality, built with HTML, CSS and JavaScript.",
-    url: "/photo_gallery_project",
-    image: "images/gallery.png",
-    skills: ["JavaScript", "HTML", "CSS", "SASS"],
-  },
-//   {
-//     name: "Wheel Of Success",
-//     text: "A word guessing game where players click letters on an on-screen keyboard to try to guess a random sentence. JavaScript is used for the game functionality.",
-//     url: "/game_show_app",
-//     image: "images/wheel_of_success.png",
-//     skills: ["JavaScript", "HTML", "CSS"],
-//   },
-  {
     name: "Phrase Hunter",
     text: "A browser-based, word guessing game. JavaScript and Object-Oriented Programming is used to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard or using the keyboard.",
     url: "/oop-game-show-app-fs",
@@ -78,12 +71,26 @@ const projectArray = [
     skills: ["JavaScript", "OOP", "HTML", "CSS"],
   },
   {
-    name: "Online Registration Form",
-    text: "A responsive, mobile-first registration form using HTML forms and CSS.",
-    url: "/online-registration-form-project",
-    image: "images/online-form.png",
+    name: "Image Gallery",
+    text: "An interactive searchable image gallery with lightbox functionality, built with HTML, CSS and JavaScript.",
+    url: "/photo_gallery_project",
+    image: "images/gallery.png",
     skills: ["JavaScript", "HTML", "CSS", "SASS"],
   },
+  // {
+  //   name: "Wheel Of Success",
+  //   text: "A word guessing game where players click letters on an on-screen keyboard to try to guess a random sentence. JavaScript is used for the game functionality.",
+  //   url: "/game_show_app",
+  //   image: "images/wheel_of_success.png",
+  //   skills: ["JavaScript", "HTML", "CSS"],
+  // },
+  // {
+  //   name: "Online Registration Form",
+  //   text: "A responsive, mobile-first registration form using HTML forms and CSS.",
+  //   url: "/online-registration-form-project",
+  //   image: "images/online-form.png",
+  //   skills: ["JavaScript", "HTML", "CSS", "SASS"],
+  // },
 ];
 
 // Loops through the projects in the projectArray and and appends the projects.
