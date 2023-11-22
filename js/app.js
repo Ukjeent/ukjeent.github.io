@@ -104,7 +104,7 @@ projectArray.forEach((element) => {
 
   const projectH3 = document.createElement("h3");
   projectH3.className = "project-h3 slide-in-on-scroll";
-  projectH3.innerHTML = `<a href="${element.url}" target=”_blank”>${element.name}</a>`;
+  projectH3.innerHTML = `<a href="${element.url}" target="_blank">${element.name}</a>`;
 
   const projectTextDiv = document.createElement("div");
   projectTextDiv.className = "project-text-container slide-in-on-scroll";
