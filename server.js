@@ -4,6 +4,16 @@ const port = 3000;
 
 const { Pool } = require('pg');
 
+//Dell
+// const pool = new Pool({
+// user: 'postgres',
+// host: 'localhost',
+// database: 'testdb',
+// password: '+CtuiD=V{X{qg#h{I]b&',
+// port: 5432, // Default PostgreSQL port
+// });
+
+//Acer
 const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
