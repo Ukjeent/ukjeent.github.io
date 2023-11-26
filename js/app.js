@@ -124,8 +124,6 @@ projectArray.forEach((element) => {
   projectBtnDiv.className = "slide-in-on-scroll";
   projectBtnDiv.innerHTML = `<a class="project-btn slide-in-on-scroll" href="${element.url}" target="_blank">Open project</a>`;
 
-    
-
   const imageA = document.createElement("a");
   imageA.className = "project-image-div";
   imageA.href = element.url;

@@ -1,11 +1,11 @@
-const { Pool } = require('pg');
+const { Pool } = require("pg");
 
 // PostgreSQL connection configuration
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  password: 'IJFrcFIqDHS8Bx3LXpfT',
-  database: 'portfolio', // Change to your database name
+  user: "postgres",
+  host: "localhost",
+  password: "IJFrcFIqDHS8Bx3LXpfT",
+  database: "portfolio", // Change to your database name
   port: 5432,
 });
 
@@ -13,7 +13,7 @@ const pool = new Pool({
 async function createProjectsTable() {
   try {
     const client = await pool.connect();
-    
+
     // Define the SQL query for creating the projects table
     const createTableQuery = `
       CREATE TABLE IF NOT EXISTS projects (
@@ -27,11 +27,11 @@ async function createProjectsTable() {
     `;
 
     await client.query(createTableQuery);
-    console.log('Projects table created successfully.');
-    
+    console.log("Projects table created successfully.");
+
     client.release();
   } catch (error) {
-    console.error('Error creating projects table:', error);
+    console.error("Error creating projects table:", error);
   }
 }
 
@@ -52,11 +52,11 @@ async function insertProjectData() {
     `;
 
     await client.query(insertDataQuery);
-    console.log('Project data inserted successfully.');
+    console.log("Project data inserted successfully.");
 
     client.release();
   } catch (error) {
-    console.error('Error inserting project data:', error);
+    console.error("Error inserting project data:", error);
   }
 }
 
