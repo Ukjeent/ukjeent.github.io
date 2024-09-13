@@ -497,10 +497,18 @@ footer {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   position: absolute;
-  width: 500px;
   left: 50%;
-  margin-left: -250px;
   bottom: -10px;
+}
+
+.Skills-desktop {
+  display: none;
+}
+
+.skills-mobile {
+  display: block;
+  width: 500px;
+  margin-left: -250px;
 }
 
 .contact-header,
@@ -1056,6 +1064,14 @@ textarea.contact-input {
   }
   .project-tech-container li {
     margin: 15px 20px 15px 0;
+  }
+  .Skills-desktop {
+    display: block;
+    width: 750px;
+    margin-left: -375px;
+  }
+  .skills-mobile {
+    display: none;
   }
 }
 @media (min-width: 1024px) {

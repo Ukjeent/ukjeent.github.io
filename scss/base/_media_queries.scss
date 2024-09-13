@@ -11,6 +11,7 @@
     font-size: 5rem;
   }
 
+
 }
 
 @media (min-width: 768px) {
@@ -64,6 +65,16 @@
 
   .project-tech-container li {
     margin: 15px 20px 15px 0;
+  }
+
+  .Skills-desktop {
+    display: block;
+    width: 750px;
+    margin-left: -375px;
+  }
+
+  .skills-mobile {
+    display: none;
   }
 
 }
