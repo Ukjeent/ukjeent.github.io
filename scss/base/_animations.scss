@@ -147,15 +147,15 @@
 // Slide
 
 .slide {
-  animation: slide 7s linear infinite;
+  animation: slide 10s linear infinite;
 }
 
 @keyframes slide {
   0% {
-    transform: translateY(-240px);
+    transform: translateY(-485px);
   }
   100% {
-    transform: translateY(240px);
+    transform: translateY(485px);
   }
 }
 
