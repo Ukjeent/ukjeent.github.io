@@ -165,7 +165,17 @@ document.addEventListener("click", (e) => {
 // Decode email
 //
 
-let encEmail = "Ympvcm4uamFrb2JzZW45MUBnbWFpbC5jb20=";
-const form = document.getElementById("contact-email");
-form.setAttribute("href", "mailto:".concat(atob(encEmail)));
-form.textContent = "".concat(atob(encEmail));
+// let encEmail = "Ympvcm4uamFrb2JzZW45MUBnbWFpbC5jb20=";
+// const form = document.getElementById("contact-email");
+// form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+// form.textContent = "".concat(atob(encEmail));
+
+const user = "bjorn";
+  const domain = "bjrn.dev";
+  const email = `${user}@${domain}`;
+
+  const link = document.getElementById("contact-email");
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.href = `mailto:${email}`;
+  });
